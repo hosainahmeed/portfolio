@@ -14,7 +14,7 @@ function ServicesSection() {
   return (
     <div
       id="services"
-      className="grid grid-cols-2 md:grid-cols-4 gap-2 text-white py-28"
+      className="grid grid-cols-2 lg:grid-cols-4 px-2 gap-2 text-white py-28"
     >
       {cardContent.map((card) => (
         <Card key={card._id} image={card.image} title={card.title}></Card>
