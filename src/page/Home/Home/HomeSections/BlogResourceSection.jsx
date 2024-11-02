@@ -25,10 +25,10 @@ function BlogResourceSection() {
               <img
                 src={blog.image}
                 alt={blog.title}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain md:object-cover"
               />
             </figure>
-            <div className="card-body p-6">
+            <div className="card-body md:px-2 pt-3">
               <h2 className="card-title text-xl">{blog.title}</h2>
               <p className="text-gray-600">{blog.publish_date}</p>
               <p className="text-gray-800">{blog.content}</p>

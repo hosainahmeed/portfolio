@@ -15,11 +15,14 @@ function ServicesSection() {
   return (
     <div id="services">
       <SectionHeader head={"Paid & Organic Services"}></SectionHeader>
-      <div
-        className="grid grid-cols-2 lg:grid-cols-4 px-2 gap-2 text-white"
-      >
-        {cardContent.map((card) => (
-          <Card key={card._id} image={card.image} title={card.title}></Card>
+      <div className="grid grid-cols-2 lg:grid-cols-4 px-2 gap-2 text-white">
+        {cardContent.map((card, index) => (
+          <Card
+            key={card._id}
+            image={card.image}
+            title={card.title}
+            index={index}
+          ></Card>
         ))}
       </div>
     </div>

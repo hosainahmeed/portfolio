@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import blog from "../../../../assets/image/banner/skills.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
@@ -86,20 +85,28 @@ function HeroSection() {
                 Take your business to new heights with expert digital
                 strategies.
               </h1>
-              <CheckCircleIcon sx={{margin:'0px 20px'}}></CheckCircleIcon>
+              <CheckCircleIcon sx={{ margin: "0px 20px" }}></CheckCircleIcon>
             </Marquee>
           </span>
         </div>
         <div className="flex gap-2 flex-col text-white sm:flex-row h-full">
-          <div className="w-full bg-[#111] rounded-2xl px-6 py-2 ">
-            <span className="text-base font-semibold">
+          <div className="w-full md:w-5/12 bg-[#111] text-xl md:text-3xl flex flex-row md:flex-col font-black items-center justify-center rounded-2xl px-6 py-2 ">
+            {/* <span className="text-base font-semibold">
               Optimize your online presence to reach a wider audience.
-            </span>
+            </span> */}
+            <div className="flex flex-row md:flex-col ">
+              <h1 className="pr-2 mr-2 border-r-2 md:border-none">200 +</h1>
+              <h1>All Projects</h1>
+            </div>
           </div>
-          <div className="w-full bg-[#111] text-white rounded-2xl px-6 py-2 ">
-            <span className="text-base font-semibold">
-              Boost conversions with data-driven marketing campaigns.
-            </span>
+          <div className="w-full sm:w-7/12 h-full text-white bg-[#111] flex items-center justify-center rounded-2xl py-2 px-4">
+          <Marquee>
+              <h1 className="text-xl tracking-wider">
+                Take your business to new heights with expert digital
+                strategies.
+              </h1>
+              <CheckCircleIcon sx={{ margin: "0px 20px" }}></CheckCircleIcon>
+            </Marquee>
           </div>
         </div>
       </motion.div>

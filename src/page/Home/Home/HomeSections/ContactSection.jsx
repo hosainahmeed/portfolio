@@ -43,7 +43,7 @@ function ContactSection() {
         head={'I Wants To Hear From You'}
         ></SectionHeader>
         <div className="md:my-28 px-2 flex md:flex-row flex-col gap-12 items-start">
-          <div className="md:w-1/2 flex flex-col gap-2">
+          <div className="md:w-1/2 flex  bg-white shadow-md rounded-lg p-2 flex-col gap-2">
             {contactInfo.map((info, idx) => (
               <div key={idx}>
                 <h1 className="text-xl font-semibold flex">
