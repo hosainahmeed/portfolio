@@ -17,7 +17,7 @@ const Home = () => {
       <ServicesSection />
       <SkillsToolsSection />
       {/* <SEOApproachSection /> */}
-      <SampleStrategiesSection />
+      {/* <SampleStrategiesSection /> */}
       {/* <TestimonialsSection /> */}
       <BlogResourceSection />
       <ContactSection />

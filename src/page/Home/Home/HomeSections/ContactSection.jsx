@@ -32,32 +32,33 @@ function ContactSection() {
 
   const onSubmit = (data) => {
     console.log("Form Data:", data);
-    toast.success('massage success')
+    toast.success("massage success");
   };
 
   return (
     <>
-      <div id="contact" className="">
+      <div id="contact" className="md:mt-28">
         <SectionHeader
-        subHead={'Contact me'}
-        head={'I Wants To Hear From You'}
+          subHead={
+            "Are You Ready to kickstart your project with a touch of magic?"
+          }
+          head={"I Wants To Hear From You"}
         ></SectionHeader>
-        <div className="md:my-28 px-2 flex md:flex-row flex-col gap-12 items-start">
-          <div className="md:w-1/2 flex  bg-white shadow-md rounded-lg p-2 flex-col gap-2">
+        <div className="md:my-28 px-2 flex md:flex-row flex-col gap-2 items-start">
+          <div className="w-full md:w-1/2 h-full flex-shrink-0 flex  bg-white shadow-md rounded-lg p-2 flex-col gap-2">
             {contactInfo.map((info, idx) => (
               <div key={idx}>
-                <h1 className="text-xl font-semibold flex">
-                  <div className="flex items-center justify-center bg-black text-white p-2 rounded-full mr-2">
-                    {info.icon}
-                  </div>
-                  -- {info.label} : {info.info}
-                </h1>
+                <div className="flex items-start flex-col justify-center mr-2">
+                  <h1>{info.icon}</h1>
+                  <h2>{info.label}</h2>
+                  <h2>{info.info}</h2>
+                </div>
               </div>
             ))}
           </div>
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="w-full mx-auto p-4 bg-white shadow-md rounded-lg"
+            className="w-full md:w-1/2 mx-auto p-4 flex-shrink-0 bg-white shadow-md rounded-lg"
           >
             <div className="mb-4">
               <label className="block text-gray-700 font-bold mb-2">Name</label>

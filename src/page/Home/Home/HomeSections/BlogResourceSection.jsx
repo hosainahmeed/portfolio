@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import SectionHeader from "../../../../Component/Utils/SectionHeader";
 import { Button } from "antd";
+import { Link } from "react-scroll";
 
 function BlogResourceSection() {
   const [blogs, setBlogs] = useState([]);
@@ -12,9 +13,7 @@ function BlogResourceSection() {
   }, []);
   return (
     <div id="blog" className="flex items-center flex-col mb-12">
-      <SectionHeader
-      head={'There is recent blogs'}
-      ></SectionHeader>
+      <SectionHeader head={"There is recent blogs"}></SectionHeader>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 md:mb-28">
         {blogs.map((blog) => (
           <div
@@ -41,7 +40,11 @@ function BlogResourceSection() {
           </div>
         ))}
       </div>
-      <Button>See all Blogs</Button>
+      <Link smooth={true} to="contact">
+        <button className="mt-4 bg-black text-white px-6 py-2 rounded-md">
+          See all blogs
+        </button>
+      </Link>
     </div>
   );
 }
