@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
-import blog from "../../../../assets/image/banner/gfonts.webp";
+import blog from "../../../../assets/image/banner/skills.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
@@ -8,9 +8,13 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import PublicIcon from "@mui/icons-material/Public";
+import XIcon from "@mui/icons-material/X";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 // import { useEffect } from "react";
 import { Link } from "react-scroll";
 import { Image } from "antd";
+import { Button } from "@mui/material";
+import Marquee from "react-fast-marquee";
 
 const containerVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -52,7 +56,7 @@ function HeroSection() {
         variants={childVariants}
       >
         <div className="flex items-center flex-col lg:flex-row justify-between gap-2">
-          <div className="w-[200px] rounded-tl-[30px] rounded-br-[30px] overflow-hidden">
+          <div className="rounded-tl-[30px] rounded-br-[30px] overflow-hidden">
             <Image.PreviewGroup>
               <Image
                 className="w-full h-full object-cover"
@@ -75,9 +79,15 @@ function HeroSection() {
         className="border-2 p-8 rounded-2xl gap-2 bg-[#fff] flex flex-col col-span-12 sm:col-span-8"
         variants={childVariants}
       >
-        <div className="w-full h-full text-white bg-[#111] rounded-2xl px-6 py-2">
-          <span className="text-base font-semibold">
-            Take your business to new heights with expert digital strategies.
+        <div className="w-full h-full text-white bg-[#111] flex items-center justify-center rounded-2xl px-6 py-2">
+          <span className="text-base font-semibold w-full">
+            <Marquee>
+              <h1 className="text-xl tracking-wider">
+                Take your business to new heights with expert digital
+                strategies.
+              </h1>
+              <CheckCircleIcon sx={{margin:'0px 20px'}}></CheckCircleIcon>
+            </Marquee>
           </span>
         </div>
         <div className="flex gap-2 flex-col text-white sm:flex-row h-full">
@@ -95,7 +105,7 @@ function HeroSection() {
       </motion.div>
 
       <motion.div
-        className="border-2 px-5 py-5 rounded-2xl bg-[#fff] col-span-12 sm:col-span-5"
+        className="border-2 px-5 py-5 rounded-2xl bg-[#fff] col-span-12 sm:col-span-6"
         variants={childVariants}
       >
         <ul className="text-black text-[12px] md:text-base">
@@ -115,7 +125,7 @@ function HeroSection() {
       </motion.div>
 
       <motion.div
-        className="border-2 px-5 py-5 rounded-2xl text-[12px] md:text-base bg-[#fff] col-span-12 sm:col-span-4"
+        className="border-2 px-5 py-5 rounded-2xl text-[12px] md:text-base bg-[#fff] col-span-12 sm:col-span-6"
         variants={childVariants}
       >
         <h2 className="text-black text-xl md:text-2xl font-bold mb-4">
@@ -125,14 +135,6 @@ function HeroSection() {
           Over 5 years of expertise in digital marketing, helping brands grow
           with strategic online solutions.
         </p>
-      </motion.div>
-
-      <motion.div
-        className="border-2 p-8 flex items-center justify-center flex-col rounded-2xl bg-[#fff] col-span-12 sm:col-span-3"
-        variants={childVariants}
-      >
-        <img src={blog} alt="Blog" className="w-24" />
-        <h1 className="text-4xl font-black uppercase">Blog</h1>
       </motion.div>
 
       <motion.div
@@ -160,6 +162,12 @@ function HeroSection() {
           <NavLink>
             <LinkedInIcon sx={{ fontSize: "40px" }} />
           </NavLink>
+          <NavLink>
+            <XIcon sx={{ fontSize: "40px" }} />
+          </NavLink>
+          <Button>
+            <a href="">Download CV</a>
+          </Button>
         </div>
       </motion.div>
 

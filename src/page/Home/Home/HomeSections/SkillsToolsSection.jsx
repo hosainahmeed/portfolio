@@ -17,10 +17,10 @@ const SkillsToolsSection = () => {
   ];
 
   return (
-    <section id="skills" className="md:py-28">
-      <div className="max-w-screen-xl mx-auto px-6">
+    <section id="skills" className="md:pb-28 md:mt-28">
+      <div className="max-w-screen-xl mx-auto">
         <div id="services">
-          <SectionHeader head={"Paid & Organic Services"}></SectionHeader>
+          <SectionHeader head={"Skills"}></SectionHeader>
           <div className="grid grid-cols-2 lg:grid-cols-4 px-2 gap-2 text-white">
             {skills.map((skill) => (
               <ServiceAnimateCard
