@@ -16,7 +16,7 @@ function Card({ image, title }) {
     <motion.div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="flex items-center relative text-center py-4 bg-[#3d3c3c] justify-center flex-col gap-2"
+      className="flex items-center relative text-center py-4 bg-[#111] justify-center flex-col gap-2"
       initial={{ opacity:90 }}
       whileHover={{ opacity: 1, backgroundColor: "#4a4949" }}
     >

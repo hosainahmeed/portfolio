@@ -1,29 +1,35 @@
+import SectionHeader from "../../../../Component/Utils/SectionHeader";
+import ServiceAnimateCard from "../../../../Component/Utils/ServiceAnimateCard";
+import img1 from "../../../../assets/image/service/1.jpg";
+import img2 from "../../../../assets/image/service/2.jpg";
+import img3 from "../../../../assets/image/service/3.jpg";
+import img4 from "../../../../assets/image/service/4.png";
+
 const SkillsToolsSection = () => {
   const skills = [
-    "webpage Audit",
-    "Key word Research",
-    "Image SEO",
-    "Facebook Ad run",
-    "YouTubeSEO ",
-    "Facebook Page SEO",
-    "On Page SEO",
+    { _id: 1, image: img1, title: "website Audit" },
+    { _id: 2, image: img2, title: "Keyword Research" },
+    { _id: 3, image: img3, title: "Image SEO" },
+    { _id: 4, image: img4, title: "Facebook Ad run" },
+    { _id: 4, image: img4, title: "YouTube SEO " },
+    { _id: 4, image: img4, title: "Facebook Page SEO" },
+    { _id: 4, image: img4, title: "On Page SEO" },
   ];
 
   return (
     <section id="skills" className="md:py-28">
       <div className="max-w-screen-xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
-          Skills
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4">
-          {skills.map((skill, index) => (
-            <div
-              key={index}
-              className="bg-white border-b-2 border-r-2 transition-shadow inset-2 duration-200 h-56 flex items-center justify-center text-center"
-            >
-              <p className="text-lg font-semibold text-gray-700">{skill}</p>
-            </div>
-          ))}
+        <div id="services">
+          <SectionHeader head={"Paid & Organic Services"}></SectionHeader>
+          <div className="grid grid-cols-2 lg:grid-cols-4 px-2 gap-2 text-white">
+            {skills.map((skill) => (
+              <ServiceAnimateCard
+                key={skill._id}
+                image={skill.image}
+                title={skill.title}
+              ></ServiceAnimateCard>
+            ))}
+          </div>
         </div>
       </div>
     </section>

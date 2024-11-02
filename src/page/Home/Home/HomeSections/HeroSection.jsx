@@ -8,8 +8,9 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import PublicIcon from "@mui/icons-material/Public";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { Link } from "react-scroll";
+import { Image } from "antd";
 
 const containerVariants = {
   hidden: { opacity: 0, y: 30 },
@@ -52,11 +53,13 @@ function HeroSection() {
       >
         <div className="flex items-center flex-col lg:flex-row justify-between gap-2">
           <div className="w-[200px] rounded-tl-[30px] rounded-br-[30px] overflow-hidden">
-            <img
-              className="w-full h-full object-cover"
-              src="https://i.pinimg.com/564x/f4/2d/38/f42d384ae3532aa99bbd561fded9423f.jpg"
-              alt="Farzana Hoque"
-            />
+            <Image.PreviewGroup>
+              <Image
+                className="w-full h-full object-cover"
+                src="https://i.pinimg.com/564x/f4/2d/38/f42d384ae3532aa99bbd561fded9423f.jpg"
+                alt="Farzana Hoque"
+              />
+            </Image.PreviewGroup>
           </div>
           <div className="text-black text-center flex flex-col gap-2 md:text-start">
             <p className="text-sm">Meet</p>
@@ -115,7 +118,9 @@ function HeroSection() {
         className="border-2 px-5 py-5 rounded-2xl text-[12px] md:text-base bg-[#fff] col-span-12 sm:col-span-4"
         variants={childVariants}
       >
-        <h2 className="text-black text-xl md:text-2xl font-bold mb-4">Experience</h2>
+        <h2 className="text-black text-xl md:text-2xl font-bold mb-4">
+          Experience
+        </h2>
         <p className="text-black text-sm mb-2">
           Over 5 years of expertise in digital marketing, helping brands grow
           with strategic online solutions.

@@ -2,7 +2,7 @@
 
 function SampleStrategiesSection() {
   return (
-    <div id="sample-strategies" className="h-screen">SampleStrategiesSection</div>
+    <div id="sample" className="h-screen">SampleStrategiesSection</div>
   )
 }
 

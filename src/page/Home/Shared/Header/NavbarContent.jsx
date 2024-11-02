@@ -12,7 +12,7 @@ const NavbarContent = () => {
     { label: 'About Me', to: 'about-me' },
     { label: 'Services', to: 'services' },
     { label: 'Skills', to: 'skills' },
-    { label: 'Sample Work', to: 'Sample' },
+    { label: 'Sample Work', to: 'sample' },
     { label: 'Blog', to: 'blog' },
     { label: 'Contact', to: 'contact' },
   ];
