@@ -18,7 +18,7 @@ const Home = () => {
       <SkillsToolsSection />
       <SEOApproachSection />
       <SampleStrategiesSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <BlogResourceSection />
       <ContactSection />
     </div>

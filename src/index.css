@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 body,html{
-    background-color: black;
-    color: #d2201d;
+    background-color: white;
+    color: black;
 }
 
 
@@ -12,3 +12,27 @@ body,html{
     background:#d2201d;
     color: white;
 }
+
+
+
+.marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .marquee .marquee-text {
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+  }
+  
+  @keyframes marquee {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  

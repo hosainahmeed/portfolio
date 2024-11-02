@@ -6,28 +6,27 @@ import { Link } from 'react-scroll';
 const NavbarContent = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
 
+
   const menuItems = [
     { label: 'Home', to: 'home' },
     { label: 'About Me', to: 'about-me' },
     { label: 'Services', to: 'services' },
-    { label: 'Skills & Tools', to: 'skills-tools' },
-    { label: 'SEO Approach', to: 'seo-approach' },
-    { label: 'Sample Strategies', to: 'sample-strategies' },
-    { label: 'Testimonials', to: 'testimonials' },
+    { label: 'Skills', to: 'skills' },
+    { label: 'Sample Work', to: 'Sample' },
     { label: 'Blog', to: 'blog' },
     { label: 'Contact', to: 'contact' },
   ];
 
   const activeStyle = {
-    border:"2px solid #E61513",
+    borderBottom:"2px solid #E61513",
     color:"#E61513"
   };
 
   return (
-    <AppBar position="sticky" sx={{ backgroundColor: '#000' }}>
+    <AppBar position="sticky" sx={{ backgroundColor: '#111',marginBottom:'20px',borderEndStartRadius:'20px',borderEndEndRadius:'20px'}}>
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1, cursor: 'pointer' }}>
-          Farzana Khatun
+          Farzana Houqe
         </Typography>
 
         {/* Desktop Menu */}
