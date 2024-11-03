@@ -10,14 +10,16 @@ import TestimonialsSection from "./HomeSections/TestimonialsSection";
 
 
 const Home = () => {
+
+
   return (
     <div>
       <HeroSection />
       <AboutMeSection/>
       <ServicesSection />
       <SkillsToolsSection />
-      {/* <SEOApproachSection /> */}
-      {/* <SampleStrategiesSection /> */}
+      <SEOApproachSection />
+      <SampleStrategiesSection />
       {/* <TestimonialsSection /> */}
       <BlogResourceSection />
       <ContactSection />

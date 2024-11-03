@@ -45,10 +45,18 @@ function ContactSection() {
           head={"I Wants To Hear From You"}
         ></SectionHeader>
         <div className="md:my-28 px-2 flex md:flex-row flex-col gap-2 items-start">
-          <div className="w-full md:w-1/2 h-full flex-shrink-0 flex  bg-white shadow-md rounded-lg p-2 flex-col gap-2">
+          <div className="w-full md:w-1/2 h-full flex-shrink-0 flex px-2 md:px-12 py-2 bg-white shadow-md rounded-lg p-2 flex-col gap-2">
+            <h1 className="flex-1 text-2xl font-semibold">Contact me</h1>
+            <h1>
+              I'm always excited to collaborate on projects, discuss innovative
+              ideas, or simply connect with like-minded individuals. Whether you
+              have a question, want to work together, or just want to say hi –
+              feel free to reach out!
+            </h1>
+            <div className="divider"></div>
             {contactInfo.map((info, idx) => (
               <div key={idx}>
-                <div className="flex items-start flex-col justify-center mr-2">
+                <div className="flex items-start justify-start gap-2 mr-2">
                   <h1>{info.icon}</h1>
                   <h2>{info.label}</h2>
                   <h2>{info.info}</h2>

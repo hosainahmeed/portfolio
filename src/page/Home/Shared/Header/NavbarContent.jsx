@@ -12,7 +12,8 @@ const NavbarContent = () => {
     { label: 'About Me', to: 'about' },
     { label: 'Services', to: 'services' },
     { label: 'Skills', to: 'skills' },
-    // { label: 'Sample Work', to: 'sample' },
+    { label: 'Work strategy ', to: 'strategy' },
+    { label: 'Sample Work', to: 'sample' },
     { label: 'Blog', to: 'blog' },
     { label: 'Contact', to: 'contact' },
   ];

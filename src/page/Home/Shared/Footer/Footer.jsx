@@ -52,7 +52,7 @@ function Footer() {
       <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
         <p>© {currentYear}, Farzana Houqe. All Rights Reserved.</p>
         <p className="flex items-center mt-4 md:mt-0">
-          Make your website our first priority SEO frindly
+        Your Website, My Priority for SEO Success!
           <span className="text-red-500 mx-1">❤️</span>
         </p>
       </div>
