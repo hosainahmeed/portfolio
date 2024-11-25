@@ -18,7 +18,6 @@ const SampleStrategiesSection = () => {
         {/* Strategy Card 1 */}
         <motion.div
           className="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow"
-          whileHover={{ scale: 1.05 }}
         >
           <FaSearch className="text-4xl text-blue-500 mx-auto" />
           <h3 className="mt-4 text-2xl font-semibold">Keyword Research</h3>
@@ -30,7 +29,6 @@ const SampleStrategiesSection = () => {
         {/* Strategy Card 2 */}
         <motion.div
           className="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow"
-          whileHover={{ scale: 1.05 }}
         >
           <FaChartLine className="text-4xl text-blue-500 mx-auto" />
           <h3 className="mt-4 text-2xl font-semibold">Content Optimization</h3>
@@ -42,7 +40,6 @@ const SampleStrategiesSection = () => {
         {/* Strategy Card 3 */}
         <motion.div
           className="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow"
-          whileHover={{ scale: 1.05 }}
         >
           <FaRocket className="text-4xl text-blue-500 mx-auto" />
           <h3 className="mt-4 text-2xl font-semibold">Link Building</h3>

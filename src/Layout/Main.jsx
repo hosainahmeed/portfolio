@@ -5,7 +5,7 @@ import { useState } from "react";
 import Loader from "../Component/Utils/Loader";
 
 const Main = () => {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const enterWord = () => {
     setLoading(false);
@@ -13,7 +13,7 @@ const Main = () => {
   return (
     <div>
       {loading ? (
-        <Loader enterWord={enterWord}></Loader>
+      <Loader enterWord={enterWord}></Loader>
       ) : (
         <div>
           <NavbarContent></NavbarContent>

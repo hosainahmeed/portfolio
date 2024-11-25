@@ -1,47 +1,46 @@
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
-function Footer() {
-  const currentYear = new Date().getFullYear();
+function Footer () {
+  const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-black text-white py-12 px-4 md:px-8 mt-12">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <footer className='bg-black text-white py-12 px-4 md:px-8 mt-12'>
+      <div className='container mx-auto flex flex-col md:flex-row justify-between items-center'>
         {/* Branding Section */}
-        <div className="text-center md:text-left mb-6 md:mb-0">
-          <h1 className="text-2xl font-semibold">Farzana Houqe</h1>
-          <p className="mt-4 text-gray-400">
-            Bringing you the best in digital solutions. We strive to deliver
-            excellence in every project.
+        <div className='text-center md:text-left mb-6 md:mb-0'>
+          <h1 className='text-2xl font-semibold'>Hosain Ali</h1>
+          <p className='mt-4 font-bold text-gray-400'>
+            The web is a canvas, and I am the creator who brings it to life
           </p>
         </div>
 
         {/* Social Media Links */}
-        <div className="flex space-x-6 mt-4 md:mt-0">
+        <div className='flex space-x-6 mt-4 md:mt-0'>
           <a
-            href="https://facebook.com"
-            aria-label="Facebook"
-            className="hover:text-blue-500"
+            href='https://facebook.com'
+            aria-label='Facebook'
+            className='hover:text-blue-500'
           >
             <FaFacebook size={24} />
           </a>
           <a
-            href="https://twitter.com"
-            aria-label="Twitter"
-            className="hover:text-blue-400"
+            href='https://twitter.com'
+            aria-label='Twitter'
+            className='hover:text-blue-400'
           >
             <FaTwitter size={24} />
           </a>
           <a
-            href="https://instagram.com"
-            aria-label="Instagram"
-            className="hover:text-pink-500"
+            href='https://instagram.com'
+            aria-label='Instagram'
+            className='hover:text-pink-500'
           >
             <FaInstagram size={24} />
           </a>
           <a
-            href="https://linkedin.com"
-            aria-label="LinkedIn"
-            className="hover:text-orange-500"
+            href='https://linkedin.com'
+            aria-label='LinkedIn'
+            className='hover:text-orange-500'
           >
             <FaLinkedin size={24} />
           </a>
@@ -49,15 +48,15 @@ function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
-        <p>© {currentYear}, Farzana Houqe. All Rights Reserved.</p>
-        <p className="flex items-center mt-4 md:mt-0">
-        Your Website, My Priority for SEO Success!
-          <span className="text-red-500 mx-1">❤️</span>
+      <div className='border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400'>
+        <p>© {currentYear}, Hosain ali. All Rights Reserved.</p>
+        <p className='flex items-center mt-4 md:mt-0'>
+          Your Website, My Priority for create awesome!
+          <span className='text-red-500 mx-1'>❤️</span>
         </p>
       </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

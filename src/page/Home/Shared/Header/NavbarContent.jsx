@@ -10,11 +10,9 @@ const NavbarContent = () => {
   const menuItems = [
     { label: 'Home', to: 'home' },
     { label: 'About Me', to: 'about' },
+    { label: 'Projects', to: 'projects' },
     { label: 'Services', to: 'services' },
     { label: 'Skills', to: 'skills' },
-    { label: 'Work strategy ', to: 'strategy' },
-    { label: 'Sample Work', to: 'sample' },
-    { label: 'Blog', to: 'blog' },
     { label: 'Contact', to: 'contact' },
   ];
 
@@ -27,7 +25,7 @@ const NavbarContent = () => {
     <AppBar position="sticky" sx={{ backgroundColor: '#111',marginBottom:'20px',borderEndStartRadius:'20px',borderEndEndRadius:'20px'}}>
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1, cursor: 'pointer' }}>
-          Farzana Houqe
+          Hosain ali
         </Typography>
 
         {/* Desktop Menu */}
