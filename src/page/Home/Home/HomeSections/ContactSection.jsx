@@ -31,7 +31,6 @@ function ContactSection () {
   } = useForm()
 
   const onSubmit = data => {
-    console.log('Form Data:', data)
     toast.success('massage success')
   }
 
