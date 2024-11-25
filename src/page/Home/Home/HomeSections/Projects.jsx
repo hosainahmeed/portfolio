@@ -7,7 +7,7 @@ import { Button } from 'antd'
 
 const projectData = [
   {
-    _id: 1,
+    _id: 1
     title: 'Caff-House',
     description:
       'A cafe, also known as a coffeehouse or coffee shop, is a place that serves coffee, tea, and light snacks, and is known for its casual social environment',
