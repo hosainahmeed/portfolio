@@ -13,7 +13,7 @@ import { Image } from 'antd'
 import { Button } from '@mui/material'
 import Marquee from 'react-fast-marquee'
 import { GitHub } from '@mui/icons-material'
-
+import resume from '../../../../../public/hosainali.pdf'
 const containerVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
@@ -112,14 +112,19 @@ function HeroSection () {
         <div className='w-full h-full border-2 bg-white flex items-center justify-center rounded-2xl'>
           <span className='text-base h-full font-semibold w-full '>
             <Marquee
-            direction='right'
-            gradient
-            gradientColor='black'
-            gradientWidth={150} 
-            className='rounded-lg h-full'
+              direction='right'
+              gradient
+              gradientColor='black'
+              gradientWidth={150}
+              className='rounded-lg h-full'
             >
-              {skill.map((sk,idx)=>(
-                <img className='w-12 h-12 ml-12 object-cover' key={idx} src={sk} alt="skills Image" />
+              {skill.map((sk, idx) => (
+                <img
+                  className='w-12 h-12 ml-12 object-cover'
+                  key={idx}
+                  src={sk}
+                  alt='skills Image'
+                />
               ))}
             </Marquee>
           </span>
@@ -158,7 +163,9 @@ function HeroSection () {
             <GitHub sx={{ fontSize: '40px' }} />
           </NavLink>
           <Button>
-            <a href=''>Download Resume</a>
+            <a href={resume} download>
+              Download resume
+            </a>
           </Button>
         </div>
       </motion.div>

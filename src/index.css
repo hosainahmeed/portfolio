@@ -4,8 +4,8 @@
 
 body,
 html {
-  background-color: white;
-background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23000000' fill-opacity='0.02'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-color: #1f1f1f;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23000000' fill-opacity='0.02'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   color: black;
 }
 .scroll-container {
@@ -17,13 +17,10 @@ background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox=
   display: none;
 }
 
-
-
 ::selection {
   background: #000;
   color: white;
 }
-
 
 .skill {
   animation: marquee 2s linear infinite;
@@ -39,29 +36,27 @@ background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox=
   }
 }
 
-
 @layer utilities {
   .skills-container > div {
-    @apply border-t-0 border-l-0 border-black;
+    @apply border-t-0 border-l-0 border-white;
   }
 
-  .skills-container > div:not(:nth-last-child(-n+3)) {
+  .skills-container > div:not(:nth-last-child(-n + 3)) {
     @apply border-b-2;
   }
 
   .skills-container > div:not(:nth-child(3n)) {
     @apply border-r-2;
   }
- 
 }
 @media (max-width: 767px) {
   .skills-container > div {
-    @apply  border-black;
+    @apply border-black;
   }
-  .skills-container > div:not(:nth-last-child(-n+1)) {
+  .skills-container > div:not(:nth-last-child(-n + 1)) {
     @apply border-b-2 border-r-0;
   }
-  .skills-container > div:not(:nth-last-child(-n+2)) {
+  .skills-container > div:not(:nth-last-child(-n + 2)) {
     @apply border-b-2 border-r-0;
   }
 

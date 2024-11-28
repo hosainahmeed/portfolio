@@ -84,7 +84,7 @@ const Projects = React.forwardRef((props, ref) => {
         else if (ref) ref.current = el
       }}
       className={`projects-container transition-colors pb-4 duration-500 rounded-2xl px-4 ${
-        isInView ? 'bg-black text-white' : 'bg-white text-black'
+        isInView ? 'bg-[#1F1F1F] text-white' : 'bg-white text-black'
       }`}
     >
       <div className='w-full'>
@@ -173,7 +173,7 @@ const Projects = React.forwardRef((props, ref) => {
 
         <div className='w-full text-center mt-16'>
           <Button
-            className='bg-black border-2 px-6 sm:px-8 text-xl sm:text-2xl font-semibold py-4 sm:py-6 border-white text-white hover:bg-white hover:text-black transition-colors duration-300'
+            className='bg-[#1F1F1F] border-2 px-6 sm:px-8 text-xl sm:text-2xl font-semibold py-4 sm:py-6 border-white text-white hover:bg-white hover:text-black transition-colors duration-300'
             color='primary'
             variant='flat'
           >

@@ -32,8 +32,8 @@ function SkillsToolsSection() {
     <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 skills-container">
       {category.map((skill, idx) => (
         <div key={idx} className="flex flex-col items-center justify-center p-4">
-          <img src={skill.img} alt={skill.title} className="w-12 h-12  object-cover" />
-          <h1 className="text-xl md:text-2xl lg:text-3xl p-4">{skill.title}</h1>
+          <img src={skill.img} alt={skill.title} className="w-12 h-12 object-cover" />
+          <h1 className="text-xl md:text-2xl lg:text-3xl p-4 text-white">{skill.title}</h1>
         </div>
       ))}
     </div>
@@ -44,15 +44,15 @@ function SkillsToolsSection() {
       <SectionHeader head="Skills" subHead="See what my Skills" />
       <div className="space-y-8">
         <div>
-          <h2 className="text-lg md:text-xl font-bold mb-4">Frontend</h2>
+          <h2 className="text-lg md:text-xl font-bold mb-4 text-white">Frontend</h2>
           {renderSkills(skills.frontend)}
         </div>
         <div>
-          <h2 className="text-lg md:text-xl font-bold mb-4">Backend</h2>
+          <h2 className="text-lg md:text-xl font-bold mb-4 text-white">Backend</h2>
           {renderSkills(skills.backend)}
         </div>
         <div>
-          <h2 className="text-lg md:text-xl font-bold mb-4">Tools</h2>
+          <h2 className="text-lg md:text-xl font-bold mb-4 text-white">Tools</h2>
           {renderSkills(skills.tools)}
         </div>
       </div>

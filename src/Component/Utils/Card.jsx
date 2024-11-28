@@ -37,7 +37,7 @@ function Card({ image, title, index }) {
       variants={cardVariants}
     >
       <img src={image} alt="" className="w-12 md:w-28" />
-      <h1 className="text-base text-black font-semibold">{title}</h1>
+      <h1 className="text-base text-white font-semibold">{title}</h1>
 
       {isHovered && (
         <motion.div

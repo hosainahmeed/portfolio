@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const Loader = ({ enterWord }) => {
   const [displayedText, setDisplayedText] = useState('')
-  const fullText = 'Hello to my personal portfolio'
+  const fullText = 'welcome to my place.😊'
 
   useEffect(() => {
     const typingInterval = setInterval(() => {
@@ -51,7 +51,8 @@ const Loader = ({ enterWord }) => {
             repeat: Infinity,
             ease: 'linear'
           }}
-          className='border-2 p-2 border-dotted rounded-full w-48 h-48 flex items-center justify-center text-white'
+          className='border-2 cursor-pointer p-2 border-dotted rounded-full
+           w-48 h-48 flex items-center justify-center text-white'
         ></motion.div>
         <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
           {displayedText === fullText && (

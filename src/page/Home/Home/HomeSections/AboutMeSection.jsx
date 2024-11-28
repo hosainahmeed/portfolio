@@ -17,7 +17,7 @@ import riding from '../../../../assets/image/Hobbies/Riding/riding.png'
 import { MdAdsClick } from 'react-icons/md'
 import Timelines from '../../../../Component/Utils/Timelines'
 import Marquee from 'react-fast-marquee'
-
+import aboutImage from '../../../../assets/image/image.png'
 const useStyle = createStyles(({ token }) => ({
   'my-modal-body': {
     background: token.blue1,
@@ -116,7 +116,8 @@ function AboutMeSection () {
             className='w-full h-full rounded-lg overflow-hidden'
           >
             <img
-              src='https://avatars.githubusercontent.com/u/136603250?v=4'
+              // src='https://avatars.githubusercontent.com/u/136603250?v=4'
+              src={aboutImage}
               alt='Hosain Ali'
               className='rounded-lg w-full h-96 object-cover hover:scale-105 transition-transform duration-300 ease-in-out'
             />
@@ -210,7 +211,7 @@ function AboutMeSection () {
                     transition={{ duration: 0.3 }}
                   >
                     <div className='bg-white w-full flex items-center justify-center'>
-                      <h1 className='text-lg text-black font-semibold'>
+                      <h1 className='text-lg text-white font-semibold'>
                         {book.name}
                       </h1>
                     </div>

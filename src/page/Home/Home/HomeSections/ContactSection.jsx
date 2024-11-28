@@ -74,7 +74,7 @@ function ContactSection () {
               <input
                 type='text'
                 {...register('name', { required: 'Name is required' })}
-                className='w-full p-2 border border-gray-300 rounded'
+                className='w-full p-2 border border-gray-300 bg-white rounded'
               />
               {errors.name && (
                 <p className='text-red-500 text-sm'>{errors.name.message}</p>
@@ -94,7 +94,7 @@ function ContactSection () {
                     message: 'Invalid email address'
                   }
                 })}
-                className='w-full p-2 border border-gray-300 rounded'
+                className='w-full p-2 border border-gray-300 bg-white rounded'
               />
               {errors.email && (
                 <p className='text-red-500 text-sm'>{errors.email.message}</p>
@@ -107,7 +107,7 @@ function ContactSection () {
               </label>
               <textarea
                 {...register('message', { required: 'Message is required' })}
-                className='w-full p-2 border border-gray-300 rounded'
+                className='w-full p-2 border border-gray-300 bg-white rounded'
                 rows='4'
               ></textarea>
               {errors.message && (
