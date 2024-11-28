@@ -29,7 +29,7 @@ function SkillsToolsSection() {
   }
 
   const renderSkills = category => (
-    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 skills-container">
+    <div className="grid cardAnimate grid-cols-2 sm:grid-cols-2 md:grid-cols-3 skills-container">
       {category.map((skill, idx) => (
         <div key={idx} className="flex flex-col items-center justify-center p-4">
           <img src={skill.img} alt={skill.title} className="w-12 h-12 object-cover" />

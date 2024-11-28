@@ -67,22 +67,21 @@ function HeroSection () {
       variants={containerVariants}
     >
       <motion.div
-        className='border-2 p-8 rounded-2xl bg-[#fff] col-span-12 sm:col-span-5'
+        className='border-2 p-8 rounded-2xl bg-[#111] col-span-12 sm:col-span-5'
         variants={childVariants}
       >
         <div className='flex md:items-start flex-col items-center lg:flex-row justify-between gap-2'>
           <div className='border-2 p-2 rounded-full'>
             <div className='rounded-full w-28 h-28 brightness-125 overflow-hidden'>
-              <Image.PreviewGroup>
-                <Image
-                  className='w-full h-full object-cover'
-                  src={heroImage}
-                  alt='Hosain ali'
-                />
-              </Image.PreviewGroup>
+              <Image
+                preview={false}
+                className='w-full h-full object-cover'
+                src={heroImage}
+                alt='Hosain ali'
+              />
             </div>
           </div>
-          <div className='text-black text-center flex flex-col gap-2 md:text-start'>
+          <div className='text-white text-center flex flex-col gap-2 md:text-start'>
             <p className='text-sm'>Meet</p>
             <h1 className='text-4xl font-bold'>Md.Hosain Ali</h1>
             <p className='text-sm'>
@@ -150,16 +149,16 @@ function HeroSection () {
           </h1>
         </div>
         <div className='flex gap-2'>
-          <NavLink>
+          <NavLink to={'https://www.facebook.com/jiku.ahamed.3'}>
             <FacebookIcon sx={{ fontSize: '40px' }} />
           </NavLink>
-          <NavLink>
+          <NavLink to={'https://www.linkedin.com/in/hosain~ahmed/'}>
             <LinkedInIcon sx={{ fontSize: '40px' }} />
           </NavLink>
-          <NavLink>
+          <NavLink to={'https://x.com/HosainAli_877'}>
             <XIcon sx={{ fontSize: '40px' }} />
           </NavLink>
-          <NavLink>
+          <NavLink to={'https://github.com/hosainahmeed'}>
             <GitHub sx={{ fontSize: '40px' }} />
           </NavLink>
           <Button>
@@ -171,11 +170,11 @@ function HeroSection () {
       </motion.div>
 
       <motion.div
-        className='border-2 p-8 rounded-2xl bg-[#fff] col-span-12 sm:col-span-4'
+        className='border-2 cardAnimate p-8 rounded-2xl bg-[#111] col-span-12 sm:col-span-4'
         variants={childVariants}
       >
         <Link smooth={true} duration={500} spy={true} offset={-70} to='contact'>
-          <h1 className='text-3xl font-semibold cursor-pointer'>
+          <h1 className='text-3xl font-semibold text-white cursor-pointer'>
             Let’s <br /> work <span className='text-blue-600'>together.</span>
           </h1>
         </Link>

@@ -36,7 +36,7 @@ function ContactSection () {
 
   return (
     <>
-      <div id='contact' className='md:mt-28'>
+      <div id='contact' className='md:mt-28 md:bg-black md:px-12 md:pt-12 md:pb-1'>
         <SectionHeader
           subHead={
             'Are You Ready to kickstart your project with a touch of magic?'

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { useInView } from "react-intersection-observer";
 
-function Card({ image, title, index }) {
+function Card({ title, description, index }) {
   const [isHovered, setIsHovered] = useState(false);
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -31,13 +31,13 @@ function Card({ image, title, index }) {
       ref={ref}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="relative flex items-center justify-center flex-col gap-2 p-4 border-2 rounded-lg border-[#111] text-center overflow-hidden"
+      className="relative flex items-center justify-center flex-col gap-2 p-6 border-2 rounded-lg border-[#fff] text-center overflow-hidden"
       initial="hidden"
       animate={inView ? "visible" : "hidden"}
       variants={cardVariants}
     >
-      <img src={image} alt="" className="w-12 md:w-28" />
-      <h1 className="text-base text-white font-semibold">{title}</h1>
+      <h1 className="text-lg font-bold text-white">{title}</h1>
+      <p className="text-sm text-gray-300">{description}</p>
 
       {isHovered && (
         <motion.div

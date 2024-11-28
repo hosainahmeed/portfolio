@@ -13,11 +13,10 @@ import img3 from '../../../../assets/image/Hobbies/Reading/boshu.jpg'
 import img4 from '../../../../assets/image/Hobbies/Reading/javed.jpg'
 import img5 from '../../../../assets/image/Hobbies/Reading/mur.jpg'
 import img6 from '../../../../assets/image/Hobbies/Reading/arnold.jpg'
-import riding from '../../../../assets/image/Hobbies/Riding/riding.png'
 import { MdAdsClick } from 'react-icons/md'
 import Timelines from '../../../../Component/Utils/Timelines'
 import Marquee from 'react-fast-marquee'
-import aboutImage from '../../../../assets/image/image.png'
+// import aboutImage from '../../../../assets/image/image.png'
 const useStyle = createStyles(({ token }) => ({
   'my-modal-body': {
     background: token.blue1,
@@ -70,6 +69,75 @@ const booksCollection = [
   }
 ]
 
+const animeList = [
+  {
+    id: 1,
+    name: 'Attack on Titan',
+    image:
+      'https://i.pinimg.com/736x/67/b6/90/67b690140f09b858dd942c7a35e434e2.jpg'
+  },
+  {
+    id: 2,
+    name: 'Fullmetal Alchemist: Brotherhood',
+    image:
+      'https://i.pinimg.com/736x/3c/e4/5f/3ce45fd76df1d0a9b7b001cceb9e6c92.jpg'
+  },
+  {
+    id: 3,
+    name: 'One Piece',
+    image:
+      'https://i.pinimg.com/736x/c9/5b/de/c95bde62b2936a56c9edb7f560d628f1.jpg'
+  },
+  {
+    id: 4,
+    name: 'Naruto',
+    image:
+      'https://i.pinimg.com/736x/05/20/95/05209578d20ec18d4aba21d2508c2a9e.jpg'
+  },
+  {
+    id: 5,
+    name: 'Dragon Ball Z',
+    image:
+      'https://i.pinimg.com/736x/a3/91/89/a39189c26cc8912b99ea1712a969f5fd.jpg'
+  },
+  {
+    id: 6,
+    name: 'My Hero Academia',
+    image:
+      'https://i.pinimg.com/736x/b0/85/1a/b0851a4e0e1e5c5d84e5ebbc36385dae.jpg'
+  },
+  {
+    id: 7,
+    name: 'Demon Slayer',
+    image:
+      'https://i.pinimg.com/736x/4f/28/57/4f2857eecb367b939e79175eb317442b.jpg'
+  },
+  {
+    id: 8,
+    name: 'Death Note',
+    image:
+      'https://i.pinimg.com/736x/82/90/06/829006f7d871f3039e4ded4e902d19a0.jpg'
+  },
+  {
+    id: 9,
+    name: 'Sword Art Online',
+    image:
+      'https://i.pinimg.com/736x/fc/07/b4/fc07b4dd57aa866313ec183f867f0a87.jpg'
+  },
+  {
+    id: 10,
+    name: 'Hunter x Hunter',
+    image:
+      'https://i.pinimg.com/736x/2a/55/7b/2a557b405ea5aa3d5e1d9851ab90f410.jpg'
+  },
+  {
+    id: 11,
+    name: 'Re:Zero − Starting Life in Another World',
+    image:
+      'https://i.pinimg.com/736x/de/3d/0f/de3d0fb67584199819bc7fb1c12d1369.jpg'
+  }
+]
+
 function AboutMeSection () {
   const [isModalOpen, setIsModalOpen] = useState([false, false])
   const { styles } = useStyle()
@@ -93,13 +161,13 @@ function AboutMeSection () {
       paddingInlineStart: 5
     },
     mask: {
-      backdropFilter: 'blur(10px)'
+      backdropFilter: 'blur(50px)'
     },
     footer: {
       borderTop: '1px solid #333'
     },
     content: {
-      boxShadow: '0 0 30px #999'
+      boxShadow: '0 0 30px #111'
     }
   }
 
@@ -116,8 +184,8 @@ function AboutMeSection () {
             className='w-full h-full rounded-lg overflow-hidden'
           >
             <img
-              // src='https://avatars.githubusercontent.com/u/136603250?v=4'
-              src={aboutImage}
+              src='https://i.ibb.co.com/jgs9v1C/image-1.png'
+              // src={aboutImage}
               alt='Hosain Ali'
               className='rounded-lg w-full h-96 object-cover hover:scale-105 transition-transform duration-300 ease-in-out'
             />
@@ -152,7 +220,7 @@ function AboutMeSection () {
           </Marquee>
         </div>
         {/* Hobbies Section */}
-        <div className='bg-[#111] text-white md:col-span-2 p-4 order-3 md:order-4 rounded-lg'>
+        <div className='bg-[#111] cardAnimate text-white md:col-span-2 p-4 order-3 md:order-4 rounded-lg'>
           <h1 className='text-xl font-semibold'>Hobbies</h1>
           <div className='w-full flex items-center justify-center h-full'>
             <Space>
@@ -167,14 +235,14 @@ function AboutMeSection () {
                   <MdAdsClick className='text-2xl animate-pulse'></MdAdsClick>
                 </Button>
               </Popover>
-              <Popover title={'Click to see my rides'}>
+              <Popover title={'Click to see my Anime List'}>
                 <Button
                   className='flex flex-col'
                   type='primary'
                   color='#fff'
                   onClick={() => toggleModal(1, true)}
                 >
-                  Riding Bicycle
+                  Watching Anime
                   <MdAdsClick className='text-2xl animate-pulse'></MdAdsClick>
                 </Button>
               </Popover>
@@ -211,7 +279,7 @@ function AboutMeSection () {
                     transition={{ duration: 0.3 }}
                   >
                     <div className='bg-white w-full flex items-center justify-center'>
-                      <h1 className='text-lg text-white font-semibold'>
+                      <h1 className='text-lg text-black font-semibold'>
                         {book.name}
                       </h1>
                     </div>
@@ -228,13 +296,41 @@ function AboutMeSection () {
             }}
           >
             <Modal
-              title='In this Year'
+              title='Till now'
               open={isModalOpen[1]}
               onOk={() => toggleModal(1, false)}
               onCancel={() => toggleModal(1, false)}
-              footer="I'm doing my best to create the best life I can for myself."
+              footer="I love watch anime 😊."
             >
-              <img src={riding} alt='' />
+              <div className='grid grid-cols-2 gap-2 md:grid-cols-3'>
+                {animeList.map(anime => (
+                  <motion.div
+                    key={anime.id}
+                    className='relative border-2 fill-black border-black p-2 overflow-hidden'
+                    whileHover={{ scale: 1.05 }}
+                  >
+                    <motion.img
+                      initial={{ opacity: 1 }}
+                      animate={{ opacity: 0.6 }}
+                      src={anime.image}
+                      className='w-full h-full object-contain md:object-cover'
+                      alt={anime.name}
+                    />
+                    <motion.div
+                      className='absolute inset-0 bg-black bg-opacity-0 flex items-center justify-center text-white'
+                      initial={{ opacity: 0 }}
+                      whileHover={{ opacity: 1 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <div className='bg-white w-full flex items-center text-center justify-center'>
+                        <h1 className='text-lg text-black font-semibold'>
+                          {anime.name}
+                        </h1>
+                      </div>
+                    </motion.div>
+                  </motion.div>
+                ))}
+              </div>
             </Modal>
           </ConfigProvider>
         </div>

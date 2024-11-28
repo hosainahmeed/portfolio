@@ -1,26 +1,39 @@
 import Card from "../../../../Component/Utils/Card";
 import SectionHeader from "../../../../Component/Utils/SectionHeader";
-import img1 from "../../../../assets/image/service/1.webp";
-import img2 from "../../../../assets/image/service/2.webp";
-import img3 from "../../../../assets/image/service/3.webp";
+
 const cardContent = [
-  { _id: 1, image: img1, title: "Frontend Development" },
-  { _id: 2, image: img2, title: "Responsive Design" },
-  { _id: 3, image: img3, title: "Backend Development" },
+  {
+    _id: 1,
+    title: "Frontend Development",
+    description:
+      "Creating modern, user-friendly interfaces using the latest web technologies, ensuring seamless interaction and visually appealing designs.",
+  },
+  {
+    _id: 2,
+    title: "Responsive Design",
+    description:
+      "Building layouts that adapt to all devices, ensuring optimal user experiences across mobile, tablet, and desktop screens.",
+  },
+  {
+    _id: 3,
+    title: "Backend Development",
+    description:
+      "Developing robust server-side logic, APIs, and database management to power applications efficiently and securely.",
+  },
 ];
 
 function ServicesSection() {
   return (
     <div id="services">
-      <SectionHeader subHead={'Services'} head={"Quality Services"}></SectionHeader>
-      <div className="grid grid-cols-2 lg:grid-cols-3 px-2 gap-2 text-white">
+      <SectionHeader subHead={"Services"} head={"Quality Services"} />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-2 gap-4 text-white">
         {cardContent.map((card, index) => (
           <Card
             key={card._id}
-            image={card.image}
             title={card.title}
+            description={card.description}
             index={index}
-          ></Card>
+          />
         ))}
       </div>
     </div>

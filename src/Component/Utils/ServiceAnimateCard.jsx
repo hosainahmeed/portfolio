@@ -16,7 +16,7 @@ function ServiceAnimateCard({ image, title }) {
     <motion.div
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="flex items-center relative text-center py-4 bg-[#000] h-48 justify-center flex-col gap-2 cursor-pointer"
+      className="flex items-center  relative text-center py-4 bg-[#000] h-48 justify-center flex-col gap-2 cursor-pointer"
       initial={{ opacity: 0.9 }}
       animate={{ opacity: over ? 1 : 0.9 }}
       whileHover={{
