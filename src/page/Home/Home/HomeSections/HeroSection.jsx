@@ -5,7 +5,6 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import EmailIcon from '@mui/icons-material/Email'
 import PhoneIcon from '@mui/icons-material/Phone'
 import LocationOnIcon from '@mui/icons-material/LocationOn'
-import XIcon from '@mui/icons-material/X'
 import CheckCircleIcon from '@mui/icons-material/CheckCircle'
 import heroImage from '../../../../assets/image/hosain.jpeg'
 import { Link } from 'react-scroll'
@@ -13,7 +12,6 @@ import { Image } from 'antd'
 import { Button } from '@mui/material'
 import Marquee from 'react-fast-marquee'
 import { GitHub } from '@mui/icons-material'
-import resume from '../../../../../public/hosainali.pdf'
 const containerVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: {
@@ -164,17 +162,23 @@ function HeroSection () {
           <div className='flex flex-col md:flex-row'>
             <Button style={{ backgroundColor: 'black', color: 'white' }}>
               <NavLink
+              target='_blank'
                 to={
-                  'https://drive.google.com/file/d/1b1pBuCTHDJnIVzX3212IDlBr5bzcypWI/view?usp=sharing'
+                  'https://drive.google.com/file/d/1_QCAMHPbKVin0v_biYVSXny-Rou1zkm0/view?usp=sharing'
                 }
               >
                 See CV
               </NavLink>
             </Button>
-            <Button>
-              <a href={resume} download>
-                Download resume
-              </a>
+            <Button style={{ backgroundColor: 'white', color: 'black' }}>
+              <NavLink
+              target='_blank'
+                to={
+                  'https://drive.google.com/file/d/1b58-rQcW-i5HuSLlhTU6XCfZgvvwVwNm/view?usp=sharing'
+                }
+              >
+                See Resume
+              </NavLink>
             </Button>
           </div>
         </div>
