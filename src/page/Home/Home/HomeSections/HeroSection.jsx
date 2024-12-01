@@ -148,31 +148,35 @@ function HeroSection () {
             Location : Dhaka, Bangladesh
           </h1>
         </div>
-        <div className='flex gap-2'>
-          <NavLink to={'https://www.facebook.com/jiku.ahamed.3'}>
-            <FacebookIcon sx={{ fontSize: '40px' }} />
-          </NavLink>
-          <NavLink to={'https://www.linkedin.com/in/hosain~ahmed/'}>
-            <LinkedInIcon sx={{ fontSize: '40px' }} />
-          </NavLink>
-
-          <NavLink to={'https://github.com/hosainahmeed'}>
-            <GitHub sx={{ fontSize: '40px' }} />
-          </NavLink>
-          <Button style={{backgroundColor:'black',color:"white"}}>
-            <NavLink
-              to={
-                'https://drive.google.com/file/d/1b1pBuCTHDJnIVzX3212IDlBr5bzcypWI/view?usp=sharing'
-              }
-            >
-              See CV
+        <div className='flex md:flex-row items-center justify-center flex-col gap-2'>
+          <div>
+            <NavLink to={'https://www.facebook.com/jiku.ahamed.3'}>
+              <FacebookIcon sx={{ fontSize: '40px' }} />
             </NavLink>
-          </Button>
-          <Button>
-            <a href={resume} download>
-              Download resume
-            </a>
-          </Button>
+            <NavLink to={'https://www.linkedin.com/in/hosain~ahmed/'}>
+              <LinkedInIcon sx={{ fontSize: '40px' }} />
+            </NavLink>
+
+            <NavLink to={'https://github.com/hosainahmeed'}>
+              <GitHub sx={{ fontSize: '40px' }} />
+            </NavLink>
+          </div>
+          <div className='flex flex-col md:flex-row'>
+            <Button style={{ backgroundColor: 'black', color: 'white' }}>
+              <NavLink
+                to={
+                  'https://drive.google.com/file/d/1b1pBuCTHDJnIVzX3212IDlBr5bzcypWI/view?usp=sharing'
+                }
+              >
+                See CV
+              </NavLink>
+            </Button>
+            <Button>
+              <a href={resume} download>
+                Download resume
+              </a>
+            </Button>
+          </div>
         </div>
       </motion.div>
 
