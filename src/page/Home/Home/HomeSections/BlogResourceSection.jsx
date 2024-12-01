@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import SectionHeader from "../../../../Component/Utils/SectionHeader";
-import { Button } from "antd";
 import { Link } from "react-scroll";
 
 function BlogResourceSection() {
