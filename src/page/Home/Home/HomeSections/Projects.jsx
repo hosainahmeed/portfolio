@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import caff from '../../../../assets/caff.png'
 import med from '../../../../assets/med.png'
-import toy from '../../../../assets/toy.png'
+import toy from '../../../../../src/assets/toy.png'
 import { Button } from 'antd'
 
 const projectData = [
