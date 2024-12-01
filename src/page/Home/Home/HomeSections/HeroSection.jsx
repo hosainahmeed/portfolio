@@ -155,12 +155,19 @@ function HeroSection () {
           <NavLink to={'https://www.linkedin.com/in/hosain~ahmed/'}>
             <LinkedInIcon sx={{ fontSize: '40px' }} />
           </NavLink>
-          <NavLink to={'https://x.com/HosainAli_877'}>
-            <XIcon sx={{ fontSize: '40px' }} />
-          </NavLink>
+
           <NavLink to={'https://github.com/hosainahmeed'}>
             <GitHub sx={{ fontSize: '40px' }} />
           </NavLink>
+          <Button style={{backgroundColor:'black',color:"white"}}>
+            <NavLink
+              to={
+                'https://drive.google.com/file/d/1b1pBuCTHDJnIVzX3212IDlBr5bzcypWI/view?usp=sharing'
+              }
+            >
+              See CV
+            </NavLink>
+          </Button>
           <Button>
             <a href={resume} download>
               Download resume
