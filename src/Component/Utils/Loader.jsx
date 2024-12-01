@@ -86,7 +86,7 @@ import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 gsap.registerPlugin(ScrollTrigger)
 
-function Loader ({ enterWord }) {
+function Loader ({ setLoading }) {
   useEffect(() => {
     function heroTextDestroy (element) {
       let herotextSplit = element.textContent.split('')
@@ -130,6 +130,10 @@ function Loader ({ enterWord }) {
       setCount(prevCount => {
         if (prevCount < 100) {
           return prevCount + 1
+        } else if (prevCount === 100) {
+          setLoading(false)
+          clearInterval(interval)
+          return prevCount
         } else {
           clearInterval(interval)
           return prevCount
@@ -145,16 +149,10 @@ function Loader ({ enterWord }) {
   return (
     <div className='w-full h-screen flex items-center justify-center relative'>
       <div className='text-center'>
-        <h1 className='introtext word text-[14vw] md:text-[8vw] leading-none font-sans uppercase text-[#fff] font-bold'>
+        <h1 className='text-[14vw] md:text-[8vw] leading-none font-sans uppercase text-[#fff] font-bold'>
           Hosain Ali
         </h1>
-        <h1 className='mt-4 text-white'>Ready _{count}%</h1> <br />
-        <button
-          onClick={enterWord}
-          className='mt-4 bg-black text-white px-6 py-2 rounded-md'
-        >
-          Enter
-        </button>
+        <h1 className='mt-4 text-white'>Ready _{count}%</h1>
       </div>
       <div
         style={{

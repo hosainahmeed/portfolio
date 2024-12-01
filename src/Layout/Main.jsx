@@ -7,13 +7,10 @@ import Loader from "../Component/Utils/Loader";
 const Main = () => {
   const [loading, setLoading] = useState(true);
 
-  const enterWord = () => {
-    setLoading(false);
-  };
   return (
     <div>
       {loading ? (
-      <Loader enterWord={enterWord}></Loader>
+      <Loader setLoading={setLoading}></Loader>
       ) : (
         <div>
           <NavbarContent></NavbarContent>
