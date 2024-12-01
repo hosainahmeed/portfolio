@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import caff from '../../../../assets/caff.png'
 import med from '../../../../assets/med.png'
+import toy from '../../../../assets/toy.png'
 import { Button } from 'antd'
 
 const projectData = [
@@ -25,6 +26,16 @@ const projectData = [
     clientCode: `https://github.com/hosainahmeed/Docs-House-Client`,
     serverCode: `https://github.com/hosainahmeed/Docs-House-server`,
     liveSite: `https://docshouse-8de58.web.app`
+  },
+  {
+    _id: 3,
+    title: 'Play Toys',
+    description:
+      'A toy store is a retail business that sells toys, such as dolls or model cars, for children to play with. ',
+    img: toy,
+    clientCode: `https://github.com/hosainahmeed/Docs-House-Client`,
+    serverCode: `https://github.com/hosainahmeed/play-toy-client`,
+    liveSite: `https://playtoy-1c00b.firebaseapp.com`
   }
 ]
 
