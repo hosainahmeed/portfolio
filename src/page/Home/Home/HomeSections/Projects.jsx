@@ -147,7 +147,7 @@ const Projects = React.forwardRef((props, ref) => {
                     </Button>
                     <Button className='text-white bg-black border-2 border-white hover:bg-white hover:text-black transition-colors duration-300 text-sm sm:text-base md:text-lg'>
                       <a href={project.clientCode} target='_blank'>
-                        Clien side code
+                        Client side code
                       </a>
                     </Button>
                     <Button className='text-white bg-black border-2 border-white hover:bg-white hover:text-black transition-colors duration-300 text-sm sm:text-base md:text-lg'>
@@ -168,7 +168,7 @@ const Projects = React.forwardRef((props, ref) => {
                   </Button>
                   <Button className='text-white bg-black border-2 border-white hover:bg-white hover:text-black transition-colors duration-300 text-sm sm:text-base md:text-lg'>
                     <a href={project.clientCode} target='_blank'>
-                      Clien side code
+                      Client side code
                     </a>
                   </Button>
                   <Button className='text-white bg-black border-2 border-white hover:bg-white hover:text-black transition-colors duration-300 text-sm sm:text-base md:text-lg'>
@@ -183,13 +183,13 @@ const Projects = React.forwardRef((props, ref) => {
         </div>
 
         <div className='w-full text-center mt-16'>
-          <Button
+          {/* <Button
             className='bg-[#1F1F1F] border-2 px-6 sm:px-8 text-xl sm:text-2xl font-semibold py-4 sm:py-6 border-white text-white hover:bg-white hover:text-black transition-colors duration-300'
             color='primary'
             variant='flat'
           >
             <Link to='/allprojects'>All Projects</Link>
-          </Button>
+          </Button> */}
         </div>
       </div>
     </div>
