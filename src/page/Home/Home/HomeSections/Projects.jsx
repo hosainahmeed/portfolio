@@ -33,8 +33,8 @@ const projectData = [
     description:
       'A toy store is a retail business that sells toys, such as dolls or model cars, for children to play with. ',
     img: toy,
-    clientCode: `https://github.com/hosainahmeed/Docs-House-Client`,
-    serverCode: `https://github.com/hosainahmeed/play-toy-client`,
+    clientCode: `https://github.com/hosainahmeed/play-toy-client`,
+    serverCode: `https://github.com/hosainahmeed/play-toy-server`,
     liveSite: `https://playtoy-1c00b.firebaseapp.com`
   }
 ]
