@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
 import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
 import caff from '../../../../assets/caff.png'
 import med from '../../../../assets/med.png'
 import toy from '../../../../../src/assets/toy.png'
@@ -9,6 +8,16 @@ import { Button } from 'antd'
 const projectData = [
   {
     _id: 1,
+    title: 'Play Toys',
+    description:
+      'A toy store is a retail business that sells toys, such as dolls or model cars, for children to play with. ',
+    img: toy,
+    clientCode: `https://github.com/hosainahmeed/play-toy-client`,
+    serverCode: `https://github.com/hosainahmeed/play-toy-server`,
+    liveSite: `https://playtoy-1c00b.firebaseapp.com`
+  },
+  {
+    _id: 2,
     title: 'Cafe House',
     description:
       'A cafe, also known as a coffeehouse or coffee shop, is a place that serves coffee, tea, and light snacks, and is known for its casual social environment',
@@ -18,7 +27,7 @@ const projectData = [
     liveSite: `https://coffee-rush-15b08.web.app`
   },
   {
-    _id: 2,
+    _id: 3,
     title: 'Medical Center',
     description:
       'A dynamic medical center platform offering seamless access to patient records, doctor profiles, and appointment management with real-time updates and modern UI.',
@@ -26,16 +35,6 @@ const projectData = [
     clientCode: `https://github.com/hosainahmeed/Docs-House-Client`,
     serverCode: `https://github.com/hosainahmeed/Docs-House-server`,
     liveSite: `https://docshouse-8de58.web.app`
-  },
-  {
-    _id: 3,
-    title: 'Play Toys',
-    description:
-      'A toy store is a retail business that sells toys, such as dolls or model cars, for children to play with. ',
-    img: toy,
-    clientCode: `https://github.com/hosainahmeed/play-toy-client`,
-    serverCode: `https://github.com/hosainahmeed/play-toy-server`,
-    liveSite: `https://playtoy-1c00b.firebaseapp.com`
   }
 ]
 
