@@ -11,7 +11,7 @@ function SkillsToolsSection() {
       {title: 'React', img: "https://i.ibb.co/QNt6kkW/react-icon-0.png"},
       {title: 'Next.js', img: "https://pulkitgangwar.gallerycdn.vsassets.io/extensions/pulkitgangwar/nextjs-snippets/1.0.2/1713018281951/Microsoft.VisualStudio.Services.Icons.Default"},
       {title: 'Ant design', img: "https://iconape.com/wp-content/files/ro/370540/svg/ant-design-logo-icon-png-svg.png"},
-      {title: 'Framer Motion', img: "https://cdn.iconscout.com/icon/free/png-256/free-framer-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-vol-3-pack-logos-icons-3031011.png"},
+      {title: 'Framer Motion', img: "https://www.ejable.com/wp-content/uploads/2022/04/Framer-Motion-1200x1159.webp"},
     ],
     backend: [
       {title: 'Node.js', img: 'https://cdn.iconscout.com/icon/free/png-256/free-node-js-logo-icon-download-in-svg-png-gif-file-formats--nodejs-programming-language-pack-logos-icons-1174925.png?f=webp&w=256'},
@@ -19,7 +19,6 @@ function SkillsToolsSection() {
       {title: 'MongoDB', img: 'https://i.ibb.co/bb39V2R/5858229-middle-removebg-preview.png'}
     ],
     tools: [
-      {title: 'XD', img: 'https://cdn.iconscout.com/icon/free/png-256/free-adobe-xd-logo-icon-download-in-svg-png-gif-file-formats--logos-icons-1361791.png'},
       {title: 'Vercel', img: 'https://i.ibb.co/q9MchFj/logo-vercel.png'},
       {title: 'Figma', img: 'https://i.ibb.co/SPCRhVJ/5968705.png'},
       {title: 'GitHub', img: 'https://cdn-icons-png.flaticon.com/256/25/25231.png'},
